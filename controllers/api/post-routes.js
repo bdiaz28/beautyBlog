@@ -8,13 +8,13 @@ router.get('/', (req, res) => {
         attributes: [
             'id', 
             'title', 
-            'body', 
+            'content', 
             'created_at'
         ],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'content', 'commenter_username', 'post_id', 'user_id', 'created_at'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -38,11 +38,11 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'title', 'body', 'created_at'],
+        attributes: ['id', 'title', 'content', 'created_at'],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'content', 'commenter_username', 'post_id', 'user_id', 'created_at'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -70,7 +70,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
-        body: req.body.body,
+        content: req.body.content,
         user_id: req.body.user_id
       })
         .then(dbPostData => res.json(dbPostData))
