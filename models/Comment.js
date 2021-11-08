@@ -15,10 +15,6 @@ Comment.init(
           type: DataTypes.TEXT,
           allowNull: false,
       },
-      commenter_username: {
-          type: DataTypes.STRING,
-          allowNull: false
-      },
       user_id: {
           type: DataTypes.INTEGER,
           references: {

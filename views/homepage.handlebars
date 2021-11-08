@@ -2,7 +2,9 @@
     {{#each posts as |post|}}
     <li>
         <article class="post">
-            <div class="title">{{title}}</a></div>
+            <div class="title">
+                <a href="/">{{title}}</a
+                ></div>
             <div class="meta">
                 {{user.username}} on {{created_at}}
                 <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
