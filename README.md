@@ -64,6 +64,7 @@
 
 ## FUTURE DEVELOPMENT
 
+- Update webpage with better layout
 
 ## AUTHORS
 
