@@ -2,24 +2,44 @@ const { Comment } = require('../models');
 
 const commentdata = [
   {
-    content: 'Nunc rhoncus dui vel sem.',
-    user_id: 1,
+    content: 'already bought the whole line!!',
+    user_id: 2,
     post_id: 1
   },
   {
-    content: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
+    content: 'so many great gift ideas',
+    user_id: 3,
+    post_id: 2
+  },
+  {
+    content: 'stepping up their game!!',
+    user_id: 4,
+    post_id: 3
+  },
+  {
+    content: 'take all my money',
+    user_id: 2,
+    post_id: 4
+  },
+  {
+    content: 'already bought the whole line!!',
     user_id: 2,
     post_id: 3
   },
   {
-    content: 'Aliquam erat volutpat. In congue.',
-    user_id: 3,
+    content: 'so many great gift ideas',
+    user_id: 1,
     post_id: 4
   },
   {
-    content: 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
-    user_id: 4,
+    content: 'stepping up their game!!',
+    user_id: 3,
     post_id: 2
+  },
+  {
+    content: 'take all my money',
+    user_id: 1,
+    post_id: 4
   },
 ]
 

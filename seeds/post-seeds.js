@@ -2,24 +2,24 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    title: 'Jaclyn Roxanne?!?!',
+    post_content: 'new line?!?! my thoughts!',
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'https://nasa.gov/donec.json',
-    user_id: 2
+    title: 'Sephora Holiday Sale',
+    post_content: "here's what I think you should get!",
+    user_id: 1
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    post_url: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    title: 'Ulta',
+    post_content: 'new stores!',
     user_id: 3
   },
   {
-    title: 'Nunc purus.',
-    post_url: 'http://desdev.cn/enim/blandit/mi.jpg',
-    user_id: 4
+    title: 'Target',
+    post_content:'mini ultas in stores!',
+    user_id: 2
   },
 ]
 
