@@ -12,7 +12,7 @@
 
 ## FINAL PRODUCT
 
-https://morning-scrubland-17978.herokuapp.com/
+https://beauty-blog-17978.herokuapp.com
 
 
 ## BUILT WITH
