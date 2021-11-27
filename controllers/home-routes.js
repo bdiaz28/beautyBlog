@@ -32,16 +32,14 @@ router.get('/', (req, res) => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
       res.render('homepage', { 
-        posts,
-      loggedIn: req.session.loggedIn 
-      });
+      posts,
+      loggedIn: req.session.loggedIn });
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-
 
 router.get('/post/:id', (req, res) => {
   Post.findOne({
@@ -90,7 +88,7 @@ router.get('/post/:id', (req, res) => {
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/dashboard');
+    res.redirect('/');
     return;
   }
 
