@@ -1,10 +1,11 @@
 
+{{#if loggedIn}}
 <ol class="post-list">
   {{#each posts}}
   <li>
     <article class="post">
       <div class="title">
-      {{title}}
+      <a href="/"> {{title}}</a>
       </div>
       <div class="meta">
         By {{user.username}} on
@@ -16,3 +17,8 @@
   </li>
   {{/each}}
 </ol>
+{{/if}}
+
+ {{#unless loggedIn}}
+  <script src="/javascript/login.js"></script>
+  {{/unless}}
