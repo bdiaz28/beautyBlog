@@ -12,7 +12,7 @@
 
 ## FINAL PRODUCT
 
-https://beauty-blog-17978.herokuapp.com
+https://brittanysbeautyblog.herokuapp.com
 
 
 ## BUILT WITH
